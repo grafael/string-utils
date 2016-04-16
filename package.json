@@ -1,0 +1,23 @@
+{
+  "name": "string-utils",
+  "version": "1.0.0",
+  "description": "String utilities.",
+  "main": "string-utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grafael/string-utils.git"
+  },
+  "keywords": [
+    "string",
+    "utils"
+  ],
+  "author": "Rafael Gomes <messaggeroo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grafael/string-utils/issues"
+  },
+  "homepage": "https://github.com/grafael/string-utils#readme"
+}
