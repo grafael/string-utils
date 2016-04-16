@@ -1,5 +1,5 @@
 {
-  "name": "string-utils",
+  "name": "string_utils",
   "version": "1.0.0",
   "description": "String utilities.",
   "main": "string-utils.js",

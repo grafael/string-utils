@@ -9,12 +9,12 @@ Utilities to handle strings.
 Use npm to install:
 
 ```sh
-$ npm install -g string-utils
+$ npm install -g string_utils
 ```
 ### Example
-First import string-utils with require:
+First import string_utils with require:
 ```javascript
-const sutils = require('string-utils');
+const sutils = require('string_utils');
 ```
 Getting array of words from string.
 ```javascript
