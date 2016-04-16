@@ -3,7 +3,7 @@
 Utilities to handle strings.
 
 ### Version
-0.0.1
+1.0.1
 ### Installation
 
 Use npm to install:
