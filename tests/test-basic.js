@@ -38,3 +38,43 @@ describe('Testing chars', () => {
         expect(sutils.chars('  single ')).to.deep.equal(['s','i','n','g','l','e']);
     });
 });
+
+describe('Testing replaceAll', () => {
+
+    let string = 'aaaba';
+    
+    it('Simple replacement', () => {
+        expect(sutils.replaceAll(string, 'b', 'x')).to.equal('aaaxa');
+    });
+    it('Replace by null', () => {
+        expect(sutils.replaceAll(string, 'b', null)).to.equal('aaaa');
+    });
+    it('Replace by undefined', () => {
+        expect(sutils.replaceAll(string, 'b', undefined)).to.equal('aaaa');
+    });
+    it('Replace by empty string', () => {
+        expect(sutils.replaceAll(string, 'b', '')).to.equal('aaaa');
+    });
+    
+});
+
+describe('Testing removeAll', () => {
+    let string = ' ababa ababa \n\r';
+    
+    it('Simple remove', () => {
+        expect(sutils.removeAll(string, 'b')).to.equal(' aaa aaa \n\r');
+    });
+
+    it('Remove white spaces', () => {
+        expect(sutils.removeAll(string, ' ')).to.equal('ababaababa\n\r');
+    });
+
+    it('Remove \\n', () => {
+        expect(sutils.removeAll(string, '\n')).to.equal(' ababa ababa \r');
+    });
+
+    it('Remove \\r', () => {
+        expect(sutils.removeAll(string, '\r')).to.equal(' ababa ababa \n');
+    });
+
+});
