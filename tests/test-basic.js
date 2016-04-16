@@ -17,6 +17,24 @@ describe('Testing words', () => {
         expect(sutils.words('single')).to.deep.equal(['single']);
     });
     it('Single word with trailling space', () => {
-        expect(sutils.words('single ')).to.deep.equal(['single']);
+        expect(sutils.words('  single ')).to.deep.equal(['single']);
+    });
+});
+
+describe('Testing chars', () => {
+    it('Empty String', () => {
+        expect(sutils.chars('')).to.deep.equal([]);
+    });
+    it('Null String', () => {
+        expect(sutils.chars(null)).to.deep.equal([]);
+    });
+    it('Undefined String', () => {
+        expect(sutils.chars(undefined)).to.deep.equal([]);
+    });
+    it('Single word', () => {
+        expect(sutils.chars('single')).to.deep.equal(['s','i','n','g','l','e']);
+    });
+    it('Single word with trailling space', () => {
+        expect(sutils.chars('  single ')).to.deep.equal(['s','i','n','g','l','e']);
     });
 });
