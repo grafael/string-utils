@@ -78,6 +78,14 @@ Remove all ocurrences of particular string.
 sutils.removeAll('lorem lorem ipsum', 'lorem');
 //'ipsum'
 ```
+Distance between two strings using (Levenshtein distance) .
+```javascript
+let stringA = 'lorem ipsum dolor sit amet';
+let stringB = 'lorem ipsum';
+
+sutils.distance(stringA, stringB);
+//15
+```
 
 License
 ----

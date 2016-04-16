@@ -1,6 +1,6 @@
 {
   "name": "string_utils",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "String utilities.",
   "main": "string-utils.js",
   "scripts": {
