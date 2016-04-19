@@ -3,7 +3,7 @@
 Utilities to handle strings.
 
 ### Version
-1.0.1
+1.0.4
 ### Installation
 
 Use npm to install:
@@ -85,6 +85,13 @@ let stringB = 'lorem ipsum';
 
 sutils.distance(stringA, stringB);
 //15
+```
+Camelize.
+```javascript
+let string = 'lorem_ipsum_dolor_sit_amet';
+
+sutils.camelize(string);
+//LoremIpsumDolorSitAmet
 ```
 
 License

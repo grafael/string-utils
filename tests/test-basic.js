@@ -251,7 +251,7 @@ describe('Test unique chars:', () => {
 
 });
 
-describe('Test count words', () => {
+describe('Test count words:', () => {
     
     let string = 'lorem ipsum dolor ';
 
@@ -277,7 +277,7 @@ describe('Test count words', () => {
 
 });
 
-describe('Test count chars', () => {
+describe('Test count chars:', () => {
     
     let string = 'lorem ipsum dolor ';
 
@@ -299,6 +299,20 @@ describe('Test count chars', () => {
 
     it('Count string with only spaces', () => {
         expect(sutils.countChars('     ')).to.equal(5);
+    });
+
+});
+
+describe('Test camelize:', () => {
+    
+    let string = 'lorem_ipsum_dolor';
+
+    it('Simple camelize', () => {
+        expect(sutils.camelize(string)).to.equal('LoremIpsumDolor');
+    });
+
+    it('Camelize null string', () => {
+        expect(sutils.camelize(null)).to.equal(null);
     });
 
 });
