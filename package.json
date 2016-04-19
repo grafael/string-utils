@@ -1,8 +1,8 @@
 {
   "name": "string_utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "String utilities.",
-  "main": "string-utils.js",
+  "main": "./lib/string-utils.js",
   "scripts": {
     "test": "mocha ./tests/test-basic.js"
   },
